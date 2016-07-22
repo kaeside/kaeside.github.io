@@ -1,6 +1,8 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
+
 /*Colors
 Background Off Black Color: #181717
-Accent Blue:  #33cccc;
+Accent Blue:  #00cdcf;
 */
 
 
@@ -24,152 +26,135 @@ img {
 /*End Borders*/
 
 
-/* Box Sizing */
+/* Box Model */
 
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
 /*Background Color and text override*/
 
-body {
-  background: #181717;
-  color: #E9E9E9;
-  margin-left: 220px;
-  font-family: muli;
+#banner {
+    background-color: #00cdcf;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.32px;
+    line-height: 1.5em;
+    padding: 44px 22px 14.6667px 22px;
+    width: 100%;
 }
 
-.content h1 {
-  font-family: philosopher;
-  font-size: 5em;
+#banner h2 {
+    font-family: Raleway;
+    font-size: 4em;
 }
 
-.one .content {
-  padding: 3em 0em;
+
+.myself img {
+    width: 125px;
+    height: 200px;
+    border-radius: 5px 20px 5px;
 }
 
-.one .content p {
-  font-size: 1.25em;
+.aboutMe, .inner {
+    font-family: Raleway;
 }
-
 .content-header {
-  font-family: philosopher;
-  font-size: 2em;
-}
-/*END Background Color and text override*/
-
-
-
-/* NAVIGATION BAR */
-.nav-bar {
-  height: 100%;
-  width: 218px;
-  left: 0;
-  position: fixed;
-  background: #181717;
-  /*border-right: solid #33cccc .5em;*/
+    text-align: center;
 }
 
-.nav-img img {
-  width: 215px;
-  height: 215px;
-  margin: 0 auto;
-  border: solid 3px #33cccc;
+.major h2 {
+    text-align: center;
 }
 
-.nav-projects li {
-  color: #E9E9E9;
-  font-family: muli;
+.contact {
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+    display: block;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.32px;
+    line-height: 1.5em;
+    padding: 44px 22px 14.6667px 22px;
+    width: 100%;
 }
 
-a {
-  color: #E9E9E9;
+.aboutMe {
+    text-align: center;
 }
 
-.nav-buttons {
-  padding: 0;
-  text-align: center;
+.features {
+    display: flex;
+    flex-flow: column;
+    align-items: space-between;
+    text-align: center;
+    font-family: Raleway;
 }
 
-.nav-buttons li {
-  list-style-type: none;
-  padding: 1em 0;
+.eatupImg {
+    width :24em;
+    height:20em;
 }
 
-.fresh-prince,
-.about-me {
-  width: 100%;
-  background: #33cccc;
-}
-/* END NAV-BAR */
-
-
-/* BEGIN SECTION ONE */
-.one {
-  background-image: url('https://images.unsplash.com/photo-1460186136353-977e9d6085a1?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
-  background-repeat: none;
-  background-size: cover;
-  color: white;
-  width: 100%;
+.issTrackerImg {
+    height: 533px;
+    width: 300px;
 }
 
-.one .content {
-  text-align: center;
-  border-bottom: solid 3px #33cccc;
+.contact-container {
+    display: flex;
+    flex-flow: column;
+    align-items: space-between;
+    margin: 0 4em;
+}
+.nameInput, .emailInput {
+    margin: 2% auto;
+    width: 40%;
+}
+.messageInput textarea {
+    margin: 2% auto;
+    width: 40%;
+    height: 10%
+}
+.skillset-header {
+    text-align: center;
+}
+.skillset {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    /* TODO: fix so that i use flex alone to wrap content in a row */
+    /*text-align: center;*/
 }
 
-.one .content p {
-  font-weight: 900;
-}
-/* END SECTION ONE */
-
-
-
-/* BEGIN SECTION TWO */
-
-.two .content {
-  text-align: center;
-  border-bottom: solid 3px #33cccc;
-}
-/* END SECTION TWO */
-
-
-/* BEGIN SECTION THREE */
-.three > h2 {
-  text-align: center;
+.skill {
+    margin: 0 1em;
 }
 
-.project-images {
-  text-align: center;
-  margin: 0 auto;
-  padding-left: 0px;
+.skill img {
+    height: 5em;
+    width: 5em;
 }
-
-.project-images img {
-  width: 300px;
-  height: 210px;
-  margin: 0 auto;
-  border: solid 3px #33cccc;
-}
-
-.project-images li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 5em;
-}
-
-.project-images h3 {
-  font-size: 1.15em;
-  font-family: philosopher;
-}
-/* END SECTION THREE */
-
 
 /* BEGIN FOOTER */
 footer {
-  background: #33cccc;
+  background-color: #00cdcf;
   text-align: center;
   margin: 0 auto;
-  border-top: solid 3px #33cccc;
+  border-top: solid 3px #00cdcf;
   border-width: 50%;
-  font-family: philosopher;
   color: #181717;
   padding-bottom: 1em;
 }
@@ -188,7 +173,6 @@ footer a {
 }
 .social {
   padding: 0;
-  font-family: muli;
 }
 /* END FOOTER */
 
@@ -204,3 +188,8 @@ footer a {
   }
 }
 /* END MEDIA QUERIES */
+
+
+
+
+/*//////////////////////////////////////////////////////////////*/

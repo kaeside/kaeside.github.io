@@ -35,7 +35,9 @@ img {
 	}
 
 /*Background Color and text override*/
-
+body {
+    font-family: Raleway;
+}
 #banner {
     background-color: #00cdcf;
     box-sizing: border-box;

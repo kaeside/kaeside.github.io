@@ -93,6 +93,16 @@ body {
 
 .aboutMe {
     text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.aboutMe p {
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+    line-height: 1.1em;
+    padding: 0.8em;
+    margin: 0 auto;
 }
 
 .features {

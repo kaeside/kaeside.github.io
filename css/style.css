@@ -127,6 +127,7 @@ body {
     position: relative;
     width: 24em;
     height: 20em;
+    margin: 0 auto;
 }
 
 .projectImage:hover > a {

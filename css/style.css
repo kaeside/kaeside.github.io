@@ -113,6 +113,10 @@ body {
     font-family: Raleway;
 }
 
+.feature i {
+    margin-left: 1em;
+}
+
 .eatupImg {
     width: 24em;
     height: 20em;

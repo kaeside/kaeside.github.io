@@ -142,6 +142,11 @@ body {
   width: 100%;
 }
 
+.projectImage img:hover {
+    opacity: .5;
+    transition: opacity 0.5s;
+}
+
 .projectImage a {
   display: none;
   position: absolute;

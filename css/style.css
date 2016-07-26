@@ -108,9 +108,13 @@ body {
 .features {
     display: flex;
     flex-flow: column;
-    align-items: space-between;
+    align-items: space-around;
     text-align: center;
     font-family: Raleway;
+}
+
+.gigitfeature {
+	margin-top: 15em;
 }
 
 .eatupImg {
@@ -121,6 +125,11 @@ body {
 .issTrackerImg {
     height: 533px;
     width: 300px;
+}
+
+.gigitImg {
+	width: 24em;
+	height: 20em;
 }
 
 .projectImage {
@@ -169,17 +178,16 @@ body {
     text-align: center;
 }
 .skillset {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /*width: 100%;*/
     margin-bottom: 2em;
     /* TODO: fix so that i use flex alone to wrap content in a row */
     /*text-align: center;*/
 }
 
 .skill {
-    margin: 0 1em;
+	display: inline-block;
+	margin: 0 1em;
+	text-align: center;
 }
 
 .skill img {

@@ -195,6 +195,33 @@ body {
     width: 5em;
 }
 
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.contact-links {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.contact-links li {
+	display: inline;
+	padding: 4em;
+	text-align: center;
+}
+
+
+
 /* BEGIN FOOTER */
 footer {
   background-color: #00cdcf;

@@ -1,29 +1,12 @@
-@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
 
-/*Colors
-Background Off Black Color: #181717
-Accent Blue:  #00cdcf;
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
 */
-
-
-/*Begin Borders*/
-
-
-/* nav {
-  border: solid red 4px;
-}
-section {
-  border: dotted black 2px;
-}
-div {
-  border: dashed green 1px;
-}
-img {
-  border: solid 6px purple;
-} */
-
-
-/*End Borders*/
 
 
 /* Box Model */
@@ -36,8 +19,15 @@ img {
 
 /*Background Color and text override*/
 body {
-    font-family: Raleway;
+	letter-spacing: .1em;
+    line-height: 40em;
 }
+
+p {
+	font-family: 'Raleway';
+    // font-size: 40em;
+}
+
 #banner {
     background-color: #00cdcf;
     box-sizing: border-box;
@@ -53,42 +43,28 @@ body {
     width: 100%;
 }
 
-#banner h2 {
+#banner h1 {
     font-family: Raleway;
     font-size: 4em;
-}
-
-
-.myself img {
-    width: 125px;
-    height: 200px;
-    border-radius: 5px 20px 5px;
 }
 
 .aboutMe, .inner {
     font-family: Raleway;
 }
+
 .content-header {
     text-align: center;
+	font-family: 'Raleway';
 }
 
-.major h2 {
-    text-align: center;
+.title {
+	font-family: 'Raleway';
+	border-top: solid 6px #f4f4f4;
+	padding: 0;
 }
 
-.contact {
-    background-color: #f7f7f7;
-    box-sizing: border-box;
-    color: #444;
-    text-align: center;
-    display: block;
-    font-family: Raleway;
-    font-size: 1em;
-    font-weight: 300;
-    letter-spacing: 1.32px;
-    line-height: 1.5em;
-    padding: 44px 22px 14.6667px 22px;
-    width: 100%;
+.project-title {
+	margin-bottom: 0;
 }
 
 .aboutMe {
@@ -97,8 +73,13 @@ body {
     margin: 0 auto;
 }
 
+.inner {
+	text-align: left;
+}
+
 .aboutMe p {
-    font-size: 1.2em;
+    font-size: 1em;
+	font-family: 'Cabin', serif;
     letter-spacing: 0.01em;
     line-height: 1.1em;
     padding: 0.8em;
@@ -113,8 +94,32 @@ body {
     font-family: Raleway;
 }
 
-.gigitfeature {
-	margin-top: 15em;
+.inner p {
+	font-family: 'Cabin', serif;
+}
+
+.inner > h2, .gigit-article, .eatup-article {
+	column-count: 2;
+	border-top: solid 6px #f4f4f4;
+	padding: 2em;
+}
+
+.major {
+	text-align: center;
+}
+
+.major h2 {
+    text-align: center;
+	padding-top: 0.75em;
+}
+
+.inner h2 {
+	margin-bottom: 21px;
+}
+
+.iss-article {
+	column-count: 2;
+	padding: 2em;
 }
 
 .eatupImg {
@@ -159,33 +164,39 @@ body {
   transform: translate(-50% -50%);
 }
 
-.contact-container {
-    display: flex;
-    flex-flow: column;
-    align-items: space-between;
-    margin: 0 4em;
-}
 .nameInput, .emailInput {
     margin: 2% auto;
     width: 40%;
 }
+
 .messageInput textarea {
     margin: 2% auto;
     width: 40%;
     height: 10%
 }
+
 .skillset-header {
     text-align: center;
+	border-top: solid 6px #f4f4f4;
 }
+
 .skillset {
-    /*width: 100%;*/
+	/*display: flex;*/
+	justify-content: center;
     margin-bottom: 2em;
-    /* TODO: fix so that i use flex alone to wrap content in a row */
-    /*text-align: center;*/
+}
+
+.skillset-header {
+	text-align: center;
+	margin: 0.75em;
+}
+
+.skill-list {
+	display: flex;
+	justify-content: center;
 }
 
 .skill {
-	display: inline-block;
 	margin: 0 1em;
 	text-align: center;
 }
@@ -197,29 +208,39 @@ body {
 
 
 .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  color: #00cdcf;
 }
 
-.contact-links {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+.inner p {
+	text-align: left;
+}
+
+.contact {
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+    /*display: block;*/
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 32px;
+    padding: 44px 22px 14.6667px 22px;
+    width: 100%;
+}
+
+.contact-link-container {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 3em;
 }
 
-.contact-links li {
-	display: inline;
-	padding: 4em;
+.contact-link {
+	display: flex;
 	text-align: center;
+	margin: 0 4em;
 }
-
 
 
 /* BEGIN FOOTER */
@@ -229,7 +250,7 @@ footer {
   margin: 0 auto;
   border-top: solid 3px #00cdcf;
   border-width: 50%;
-  color: #181717;
+  color: #ffffff;
   padding-bottom: 1em;
 }
 
@@ -237,22 +258,11 @@ footer h4 {
   font-size: 1.25em;
 }
 
-footer li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 20px;
-}
-footer a {
-  color: #181717;
-}
-.social {
-  padding: 0;
-}
 /* END FOOTER */
 
 /* BEGIN MEDIA QUERIES */
 @media only screen and (max-width: 980px) {
-  .one {
+  .project-section {
     font-size: .75em;
   }
 }

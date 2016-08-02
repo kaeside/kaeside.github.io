@@ -187,6 +187,7 @@ p {
 }
 .project-image img {
     border: #00cdcf 2px solid;
+	box-shadow: 10px 10px 25px;
 }
 
 /*SKILLS SECTION*/

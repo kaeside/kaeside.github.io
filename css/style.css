@@ -72,10 +72,16 @@ p {
 #banner h1 {
     font-family: Raleway;
     font-size: 4em;
+	text-shadow: 2px 2px 2px #444;
 }
 
 #banner h4 {
 	font-size: 4em;
+	text-shadow: 2px 2px 2px #444;
+}
+
+#banner i {
+	text-shadow: 2px 2px 2px #444;
 }
 
 #banner ol {
@@ -83,10 +89,12 @@ p {
     width: 30%;
     margin: 75px auto 100px;
 	font-size: 1.25em;
+	text-shadow: 2px 2px 2px #444;
 }
 
 #banner > ol li {
 	margin-top: 1em;
+	text-shadow: 2px 2px 2px #444;
 }
 
 /*ABOUT ME SECTION*/

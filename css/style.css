@@ -73,6 +73,11 @@ p {
     font-family: Raleway;
     font-size: 4em;
 }
+
+#banner h4 {
+	font-size: 4em;
+}
+
 #banner ol {
     text-align: left;
     width: 30%;

@@ -20,8 +20,7 @@ font-family: 'Montserrat Alternates', sans-serif;
 /*GLOBAL STYLING */
 
 body {
-    letter-spacing: .1em;
-    line-height: 40em;
+    /*letter-spacing: .1em;*/
 }
 
 .outline {
@@ -65,7 +64,9 @@ p {
 }
 /*BANNER SECTION*/
 #banner-container {
-        background-color: #00cdcf;
+        background: -webkit-linear-gradient(#0BDC68, #00CDCF);
+        background: -o-linear-gradient(#0BDC68, #00CDCF);
+        background: linear-gradient(#0BDC68, #00CDCF);
         width: 100%;
 }
 #banner {
@@ -128,8 +129,7 @@ p {
     font-size: 1em;
     font-family: 'Cabin', serif;
     letter-spacing: 0.01em;
-    line-height: 1.4em;
-    /*padding: 0.8em;*/
+    line-height: 1.8em;
     margin: 0 auto;
     text-align: left;
 }
@@ -162,6 +162,8 @@ p {
 .project-info {
     width: 50%;
     margin-left: 6em;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
 }
 
 .project-info> h2, .gigit-article, .eatup-article {
@@ -174,7 +176,7 @@ p {
 }
 
 .project-image img {
-    border: #00cdcf 2px solid;
+    border: #06D49C 2px solid;
 	box-shadow: 10px 10px 25px;
     width: 24em;
     height: 20em;
@@ -182,6 +184,10 @@ p {
 
 .iss-project {
     margin-top: 0;
+}
+
+.project-links a{
+    color: #06D49C;
 }
 
 /*SKILLS SECTION*/
@@ -215,7 +221,7 @@ p {
     width: 5em;
 }
 .icon {
-    color: #00cdcf;
+    color: #06D49C;
 }
 
 
@@ -253,10 +259,12 @@ p {
 
 
 footer {
-    background-color: #00cdcf;
+    background: -webkit-linear-gradient(#0BDC68, #00CDCF);
+    background: -o-linear-gradient(#0BDC68, #00CDCF);
+    background: linear-gradient(#0BDC68, #00CDCF);
     text-align: center;
     margin: 0 auto;
-    border-top: solid 3px #00cdcf;
+    border-top: solid 3px #06D49C;
     border-width: 50%;
     color: #ffffff;
     padding-bottom: 1em;
@@ -270,19 +278,29 @@ footer h4 {
 
 /* BEGIN MEDIA QUERIES */
 
-@media only screen and (max-width: 980px) {
-    .project-section {
-        font-size: .75em;
+@media only screen and (max-width: 940px) {
+    .project {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gigit-project, .iss-project, .eatup-project {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .project-info {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-@media only screen and (min-width:)
 
-/*@media only screen and (max-width: 1650px) {
-  .article {
-    width: 100%;
-  }
-}*/
+@media only screen and (max-width: 688px) {
+    .project-info {
+        width: 360px;
+    }
+}
 
 
 /* END MEDIA QUERIES */

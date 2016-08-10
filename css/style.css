@@ -64,9 +64,9 @@ p {
 }
 /*BANNER SECTION*/
 #banner-container {
-        background: -webkit-linear-gradient(#0BDC68, #00CDCF);
-        background: -o-linear-gradient(#0BDC68, #00CDCF);
-        background: linear-gradient(#0BDC68, #00CDCF);
+        background: -webkit-linear-gradient(#0e6f83, #02293b);
+        background: -o-linear-gradient(#0e6f83, #02293b);
+        background: linear-gradient(#0e6f83, #02293b);
         width: 100%;
 }
 #banner {
@@ -176,7 +176,7 @@ p {
 }
 
 .project-image img {
-    border: #06D49C 2px solid;
+    border: #0e6f83 2px solid;
 	box-shadow: 10px 10px 25px;
     width: 24em;
     height: 20em;
@@ -187,7 +187,7 @@ p {
 }
 
 .project-links a{
-    color: #06D49C;
+    color: #0e6f83;
 }
 
 /*SKILLS SECTION*/
@@ -221,7 +221,7 @@ p {
     width: 5em;
 }
 .icon {
-    color: #06D49C;
+    color: #0e6f83;
 }
 
 
@@ -259,12 +259,12 @@ p {
 
 
 footer {
-    background: -webkit-linear-gradient(#0BDC68, #00CDCF);
-    background: -o-linear-gradient(#0BDC68, #00CDCF);
-    background: linear-gradient(#0BDC68, #00CDCF);
+    background: -webkit-linear-gradient(#0e6f83, #02293b);
+    background: -o-linear-gradient(#0e6f83, #02293b);
+    background: linear-gradient(#0e6f83, #02293b);
     text-align: center;
     margin: 0 auto;
-    border-top: solid 3px #06D49C;
+    border-top: solid 3px #0e6f83;
     border-width: 50%;
     color: #ffffff;
     padding-bottom: 1em;

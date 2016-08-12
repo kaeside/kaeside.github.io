@@ -176,6 +176,10 @@ p {
     margin-bottom: 21px;
 }
 
+.project-info span {
+    margin-left: 1em;
+}
+
 .project-image img {
     border: #0e6f83 2px solid;
 	box-shadow: 10px 10px 25px;

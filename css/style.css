@@ -19,10 +19,6 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 /*GLOBAL STYLING */
 
-body {
-    /*letter-spacing: .1em;*/
-}
-
 .outline {
 	border: solid 6px #f4f4f4;
 }
@@ -30,10 +26,7 @@ body {
 p {
     font-family: 'Raleway';
 }
-#banner h3 {
-    font-family: Playfair Display;
-    text-align: left;
-}
+
 .project-info {
     text-align: left;
 }
@@ -69,6 +62,7 @@ p {
         background: linear-gradient(#0e6f83, #02293b);
         width: 100%;
 }
+
 #banner {
     box-sizing: border-box;
     color: #ffffff;
@@ -89,6 +83,18 @@ p {
     text-align: left;
 }
 
+#banner h3 {
+    font-family: Playfair Display;
+    text-align: left;
+}
+
+.pronunciation {
+  display: flex;
+}
+.bullet em {
+  margin-left: 3em;
+  margin-right: 3em;
+}
 #banner h4 {
 	font-size: 4em;
 	text-shadow: 2px 2px 2px #444;
@@ -111,7 +117,6 @@ p {
 }
 
 /*ABOUT ME SECTION*/
-
 .content-header {
     font-family: 'Raleway';
 }
@@ -123,12 +128,12 @@ p {
     border-bottom: solid 2px #f4f4f4;
     display: flex;
     margin: 1.5em 0;
-    /*justify-content: center;*/
+
 }
 .aboutMe p {
     font-size: 1em;
     font-family: 'Cabin', serif;
-    /*font-family: Playfair Display;*/
+
     letter-spacing: 0.01em;
     line-height: 1.8em;
     margin: 1.25em auto;
@@ -136,9 +141,6 @@ p {
 }
 
 /*PROJECT SECTION*/
-/*.project-section {
-
-}*/
 .project-title {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -184,7 +186,7 @@ p {
     border: #0e6f83 2px solid;
 	box-shadow: 10px 10px 25px;
     width: 24em;
-    height: 20em;
+    height: auto;
 }
 
 .iss-project {
@@ -197,16 +199,13 @@ p {
 
 /*SKILLS SECTION*/
 
-
 .skillset-header {
     text-align: center;
-    /*border-top: solid 6px #f4f4f4;*/
     text-align: center;
     margin: 0.75em;
     padding: 1.5em 0em;
 }
 .skillset {
-    /*display: flex;*/
     justify-content: center;
     margin-bottom: 2em;
 }
@@ -231,8 +230,6 @@ p {
 
 
 /*CONTACT SECTION*/
-
-
 .contact {
     background-color: #f7f7f7;
     box-sizing: border-box;
@@ -257,10 +254,6 @@ p {
     margin: 0 4em;
 }
 
-
-/* BEGIN FOOTER */
-
-
 footer {
     background: -webkit-linear-gradient(#0e6f83, #02293b);
     background: -o-linear-gradient(#0e6f83, #02293b);
@@ -276,12 +269,33 @@ footer h4 {
     font-size: 1.25em;
 }
 
-/* END FOOTER */
 
+/* MEDIA QUERIES */
 
-/* BEGIN MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #banner h1 {
+      font-size: 3em;
+  }
+  .pronunciation {
+    font-size: 8px;
+  }
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .project-image img {
+      border: #0e6f83 2px solid;
+      box-shadow: 10px 10px 25px;
+      width: 22em;
+      height: auto;
+  }
+}
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 896px) {
     .project {
         display: block;
         margin-left: auto;
@@ -292,20 +306,100 @@ footer h4 {
         margin-right: 0;
     }
     .project-info {
-        width: 100%;
+      width: 30em;
+    }
+    .project-info {
+        width: 22em;
         margin-top: 3em;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-
-@media only screen and (max-width: 688px) {
-    .project-info {
-        width: 360px;
-    }
+@media only screen and (max-width: 768px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #banner h1 {
+      font-size: 3em;
+  }
+  .pronunciation {
+    font-size: .25em;
+  }
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .project-image img {
+      border: #0e6f83 2px solid;
+      box-shadow: 10px 10px 25px;
+      width: 22em;
+      height: auto;
+  }
 }
 
+
+@media only screen and (max-width: 400px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #banner h1 {
+      font-size: 3em;
+  }
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .project-section {
+    width: 22em;
+  }
+  .project-info {
+    width: 22em;
+  }
+  .project-image img {
+      border: #0e6f83 2px solid;
+      box-shadow: 10px 10px 25px;
+      width: 22em;
+      height: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #banner h1 {
+      font-size: 3em;
+  }
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .project-section {
+    width: 22em;
+  }
+  .project-info {
+    width: 22em;
+  }
+  .project-image img {
+      border: #0e6f83 2px solid;
+      box-shadow: 10px 10px 25px;
+      width: 22em;
+      height: auto;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  #banner {
+    margin-left: 0.25em;
+  }
+  #banner h1 {
+      font-size: 3em;
+  }
+}
 
 
 /* END MEDIA QUERIES */

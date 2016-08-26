@@ -272,20 +272,17 @@ footer h4 {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 897px) {
   #banner {
     margin-left: 1em;
     margin-right: 1em;
-  }
-  #banner h1 {
-      font-size: 3em;
   }
   .pronunciation {
     font-size: 8px;
   }
   .wrapper {
-    padding-left: 0.1em;
-    padding-right: 0.1em;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .project-image img {
       border: #0e6f83 2px solid;
@@ -307,6 +304,10 @@ footer h4 {
     }
     .project-info {
       width: 30em;
+    }
+    .wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .project-info {
         width: 22em;

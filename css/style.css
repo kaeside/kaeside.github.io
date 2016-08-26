@@ -19,6 +19,10 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 /*GLOBAL STYLING */
 
+body {
+  min-width: 368px;
+}
+
 .outline {
     border: solid 6px #f4f4f4;
 }
@@ -166,7 +170,8 @@ p {
     margin-bottom: 21px;
 }
 .project-info span {
-    margin-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .project-image img {
     border: #0e6f83 2px solid;
@@ -383,7 +388,48 @@ footer h4 {
     }
     .project-image img {
         border: #0e6f83 2px solid;
+          box-shadow: 5px 5px 15px;
         width: 18em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 368px) {
+    #banner {
+        width: 16em;
+        text-align: center;
+        margin-left: 3em;
+    }
+    #banner h1 {
+        font-size: 2.75em;
+    }
+    #banner em {
+      font-size: 17px;
+    }
+    #banner h3 {
+      font-size: 20px;
+    }
+    #banner li {
+      font-size: 17px;
+    }
+    .pronunciation{
+      font-size: 10eml
+    }
+    .wrapper {
+        width: 18em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-section {
+        width: 16em;
+    }
+    .project-info {
+        width: 16em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 5px 5px 15px;
+        width: 16em;
+        box-shadow: none;
         height: auto;
     }
 }

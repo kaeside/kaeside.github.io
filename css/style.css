@@ -20,13 +20,11 @@ font-family: 'Montserrat Alternates', sans-serif;
 /*GLOBAL STYLING */
 
 .outline {
-	border: solid 6px #f4f4f4;
+    border: solid 6px #f4f4f4;
 }
-
 p {
     font-family: 'Raleway';
 }
-
 .project-info {
     text-align: left;
 }
@@ -44,25 +42,24 @@ p {
     margin: 0 auto;
     justify-content: center;
 }
-
 .title {
     font-family: 'Raleway';
     border-width: thin;
 }
-
 .wrapper {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
-/*BANNER SECTION*/
-#banner-container {
-        background: -webkit-linear-gradient(#0e6f83, #02293b);
-        background: -o-linear-gradient(#0e6f83, #02293b);
-        background: linear-gradient(#0e6f83, #02293b);
-        width: 100%;
-}
 
+/*BANNER SECTION*/
+
+#banner-container {
+    background: -webkit-linear-gradient(#0e6f83, #02293b);
+    background: -o-linear-gradient(#0e6f83, #02293b);
+    background: linear-gradient(#0e6f83, #02293b);
+    width: 100%;
+}
 #banner {
     box-sizing: border-box;
     color: #ffffff;
@@ -79,44 +76,40 @@ p {
 #banner h1 {
     font-family: Raleway;
     font-size: 4em;
-	text-shadow: 2px 2px 2px #444;
+    text-shadow: 2px 2px 2px #444;
     text-align: left;
 }
-
 #banner h3 {
     font-family: Playfair Display;
     text-align: left;
 }
-
 .pronunciation {
-  display: flex;
+    display: flex;
 }
 .bullet {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 #banner h4 {
-	font-size: 4em;
-	text-shadow: 2px 2px 2px #444;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #444;
 }
-
 #banner em {
-	text-shadow: 2px 2px 2px #444;
+    text-shadow: 2px 2px 2px #444;
     text-align: left;
 }
-
 #banner ol {
     text-align: left;
-	font-size: 1.25em;
-	text-shadow: 2px 2px 2px #444;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 2px #444;
 }
-
-#banner > ol li {
-	margin-top: 1em;
-	text-shadow: 2px 2px 2px #444;
+#banner> ol li {
+    margin-top: 1em;
+    text-shadow: 2px 2px 2px #444;
 }
 
 /*ABOUT ME SECTION*/
+
 .content-header {
     font-family: 'Raleway';
 }
@@ -128,12 +121,10 @@ p {
     border-bottom: solid 2px #f4f4f4;
     display: flex;
     margin: 1.5em 0;
-
 }
 .aboutMe p {
     font-size: 1em;
     font-family: 'Cabin', serif;
-
     letter-spacing: 0.01em;
     line-height: 1.8em;
     margin: 1.25em auto;
@@ -141,12 +132,12 @@ p {
 }
 
 /*PROJECT SECTION*/
+
 .project-title {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     border-bottom: solid 2px #f4f4f4;
 }
-
 .projects {
     display: flex;
     flex-flow: column;
@@ -161,39 +152,32 @@ p {
     margin: 5em auto;
     justify-content: space-between;
 }
-
 .project-info {
     width: 50%;
     margin-left: 6em;
     letter-spacing: 0.01em;
     line-height: 1.8em;
 }
-
 .project-info> h2, .gigit-article, .eatup-article {
     border-top: solid 6px #f4f4f4;
     padding: 2em;
 }
-
 .project-info h2 {
     margin-bottom: 21px;
 }
-
 .project-info span {
     margin-left: 1em;
 }
-
 .project-image img {
     border: #0e6f83 2px solid;
-	box-shadow: 10px 10px 25px;
+    box-shadow: 10px 10px 25px;
     width: 24em;
     height: auto;
 }
-
 .iss-project {
     margin-top: 0;
 }
-
-.project-links a{
+.project-links a {
     color: #0e6f83;
 }
 
@@ -228,8 +212,8 @@ p {
     color: #0e6f83;
 }
 
-
 /*CONTACT SECTION*/
+
 .contact {
     background-color: #f7f7f7;
     box-sizing: border-box;
@@ -253,7 +237,6 @@ p {
     text-align: center;
     margin: 0 4em;
 }
-
 footer {
     background: -webkit-linear-gradient(#0e6f83, #02293b);
     background: -o-linear-gradient(#0e6f83, #02293b);
@@ -269,34 +252,32 @@ footer h4 {
     font-size: 1.25em;
 }
 
-
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1024px) and (min-width: 897px) {
-  #banner {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  .pronunciation {
-    font-size: 8px;
-  }
-  .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .project-image img {
-      border: #0e6f83 2px solid;
-      box-shadow: 10px 10px 25px;
-      width: 22em;
-      height: auto;
-  }
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .pronunciation {
+        font-size: 8px;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
 }
-
 @media only screen and (max-width: 896px) {
-  #banner {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     .project {
         display: block;
         margin-left: auto;
@@ -307,11 +288,11 @@ footer h4 {
         margin-right: 0;
     }
     .project-info {
-      width: 30em;
+        width: 30em;
     }
     .wrapper {
-      padding-left: 15px;
-      padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .project-info {
         width: 22em;
@@ -320,94 +301,99 @@ footer h4 {
         margin-right: auto;
     }
 }
-
 @media only screen and (max-width: 768px) {
-  #banner {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  #banner h1 {
-      font-size: 3em;
-  }
-  .pronunciation {
-    display: block;
-  }
-  .bullet {
-    display: none;
-  }
-  .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .project-image img {
-      border: #0e6f83 2px solid;
-      box-shadow: 10px 10px 25px;
-      width: 22em;
-      height: auto;
-  }
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    .pronunciation {
+        display: block;
+    }
+    .bullet {
+        display: none;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
 }
-
-
 @media only screen and (max-width: 400px) {
-  #banner {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  #banner h1 {
-      font-size: 3em;
-  }
-  .wrapper {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .project-section {
-    width: 22em;
-  }
-  .project-info {
-    width: 22em;
-  }
-  .project-image img {
-      border: #0e6f83 2px solid;
-      box-shadow: 10px 10px 25px;
-      width: 22em;
-      height: auto;
-  }
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    .wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .project-section {
+        width: 22em;
+    }
+    .project-info {
+        width: 22em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
 }
-
-@media only screen and (max-width: 320px) {
-  #banner {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  #banner h1 {
-      font-size: 3em;
-  }
-  .wrapper {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .project-section {
-    width: 22em;
-  }
-  .project-info {
-    width: 22em;
-  }
-  .project-image img {
-      border: #0e6f83 2px solid;
-      box-shadow: 10px 10px 25px;
-      width: 22em;
-      height: auto;
-  }
+@media only screen and (max-width: 399px) {
+    #banner {
+        margin-left: 2em;
+        margin-right: 1em;
+        width: 20em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    #banner h3 {
+      font-size: 20px;
+    }
+    #banner li {
+      font-size: 18px;
+    }
+    .outline {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 20em;
+    }
+    .project-section {
+        width: 18em;
+    }
+    .project-info {
+        width: 18em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        width: 18em;
+        height: auto;
+    }
 }
-
 @media only screen and (max-width: 240px) {
-  #banner {
-    margin-left: 0.25em;
-  }
-  #banner h1 {
-      font-size: 3em;
-  }
+    #banner {
+        margin-left: 0.25em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
 }
-
 
 /* END MEDIA QUERIES */

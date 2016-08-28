@@ -3,7 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Playfair+Display|Raleway");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -362,7 +362,9 @@ textarea {
   -webkit-appearance: none; }
 
 /* Box Model */
-*, *:before, *:after {
+*,
+*:after,
+*:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -383,10 +385,12 @@ p {
 .project-info p {
   font-family: "Cabin", serif; }
 
-.aboutMe, .project-info {
-  font-family: Raleway; }
+.aboutMe,
+.project-info {
+  font-family: "Raleway", sans-serif; }
 
-.skillset-header .title, .major {
+.major,
+.skillset-header .title {
   border-bottom: solid 2px #f4f4f4;
   width: inherit;
   padding-bottom: 15px;
@@ -414,7 +418,7 @@ p {
   box-sizing: border-box;
   color: #ffffff;
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 1.32px;
@@ -423,12 +427,12 @@ p {
   max-width: 960px;
   margin: 0 auto; }
   #banner h1 {
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 4em;
     text-shadow: 2px 2px 2px #444;
     text-align: left; }
   #banner h3 {
-    font-family: Playfair Display;
+    font-family: "Playfair Display", serif;
     text-align: left; }
   #banner h4 {
     font-size: 4em;
@@ -459,7 +463,7 @@ p {
     margin: 1.5em 0; }
   .aboutMe p {
     font-size: 1em;
-    font-family: 'Cabin', serif;
+    font-family: "Cabin", serif;
     letter-spacing: 0.01em;
     line-height: 1.8em;
     margin: 1.25em auto;
@@ -492,17 +496,13 @@ p {
   margin-left: 6em;
   letter-spacing: 0.01em;
   line-height: 1.8em; }
-
-.project-info > h2, .gigit-article, .eatup-article {
-  border-top: solid 6px #f4f4f4;
-  padding: 2em; }
-
-.project-info h2 {
-  margin-bottom: 21px; }
-
-.project-info span {
-  margin-left: 0.5em;
-  margin-right: 0.5em; }
+  .project-info h2 {
+    border-top: solid 6px #f4f4f4;
+    padding: 2em;
+    margin-bottom: 21px; }
+  .project-info span {
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
 
 .project-image img {
   border: #0e6f83 2px solid;
@@ -526,7 +526,7 @@ p {
   font-weight: 300;
   letter-spacing: normal;
   line-height: 32px;
-  padding: 22px 16px 22px;
+  padding: 22px 16px;
   width: 100%; }
 
 .contact-link-container {
@@ -539,6 +539,9 @@ p {
   text-align: center;
   margin: 0 4em; }
 
+.icon {
+  color: #0e6f83; }
+
 footer {
   background: -webkit-linear-gradient(#0e6f83, #02293b);
   background: -o-linear-gradient(#0e6f83, #02293b);
@@ -549,9 +552,8 @@ footer {
   border-width: 50%;
   color: #ffffff;
   padding-bottom: 1em; }
-
-footer h4 {
-  font-size: 1.25em; }
+  footer h4 {
+    font-size: 1.25em; }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1024px) and (min-width: 897px) {
@@ -581,7 +583,9 @@ footer h4 {
     margin-left: auto;
     margin-right: auto; }
 
-  .gigit-project, .iss-project, .eatup-project {
+  .eatup-project,
+  .gigit-project,
+  .iss-project {
     margin-left: 0;
     margin-right: 0; }
 

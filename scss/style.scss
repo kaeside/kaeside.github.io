@@ -1,34 +1,38 @@
 @import 'normalize';
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
-
+@import url("https://fonts.googleapis.com/css?family=Cabin|Playfair+Display|Raleway");
 //VARIABLES
 $playfair: 'Playfair Display', serif;
 $raleway: 'Raleway', sans-serif;
 $cabin: 'Cabin', serif;
-
-
+$white: #ffffff;
+$lightGrey: #f4f4f4;
+$shadowGrey: #444;
+$gradientGreen: #0e6f83;
+$projectTopBorder: solid 6px $lightGrey;
+$projectBottomBorder: solid 2px $lightGrey;
+$imgBorder: $gradientGreen 2px solid;
+$imgShadow: 5px 5px 15px;
+$bannerTextShadow: 2px 2px 2px $shadowGrey;
 // MIXINS
 @mixin banner-gradient($gradientColor1, $gradientColor2) {
-  background: -webkit-linear-gradient($gradientColor1, $gradientColor2);
-  background: -o-linear-gradient($gradientColor1, $gradientColor2);
-  background: linear-gradient($gradientColor1, $gradientColor2);
+    background: -webkit-linear-gradient($gradientColor1, $gradientColor2);
+    background: -o-linear-gradient($gradientColor1, $gradientColor2);
+    background: linear-gradient($gradientColor1, $gradientColor2);
 }
 /* Box Model */
-
-*, *:before, *:after {
+*,
+*:after,
+*:before {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 /*GLOBAL STYLING */
-
 body {
-  min-width: 368px;
+    min-width: 368px;
 }
-
 .outline {
-    border: solid 6px #f4f4f4;
+    border: $projectTopBorder;
 }
 p {
     font-family: $raleway;
@@ -39,11 +43,13 @@ p {
 .project-info p {
     font-family: $cabin;
 }
-.aboutMe, .project-info {
-    font-family: Raleway;
+.aboutMe,
+.project-info {
+    font-family: $raleway;
 }
-.skillset-header .title, .major {
-    border-bottom: solid 2px #f4f4f4;
+.major,
+.skillset-header .title {
+    border-bottom: $projectBottomBorder;
     width: inherit;
     padding-bottom: 15px;
     display: flex;
@@ -59,18 +65,16 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
 /*BANNER SECTION*/
-
 #banner-container {
-    @include banner-gradient(#0e6f83, #02293b);
+    @include banner-gradient($gradientGreen, #02293b);
     width: 100%;
 }
 #banner {
     box-sizing: border-box;
-    color: #ffffff;
+    color: $white;
     display: block;
-    font-family: Raleway;
+    font-family: $raleway;
     font-size: 1em;
     font-weight: 300;
     letter-spacing: 1.32px;
@@ -79,69 +83,66 @@ p {
     max-width: 960px;
     margin: 0 auto;
     h1 {
-        font-family: Raleway;
+        font-family: $raleway;
         font-size: 4em;
-        text-shadow: 2px 2px 2px #444;
+        text-shadow: $bannerTextShadow;
         text-align: left;
     }
     h3 {
-        font-family: Playfair Display;
+        font-family: $playfair;
         text-align: left;
     }
     h4 {
         font-size: 4em;
-        text-shadow: 2px 2px 2px #444;
+        text-shadow: $bannerTextShadow;
     }
     em {
-        text-shadow: 2px 2px 2px #444;
+        text-shadow: $bannerTextShadow;
         text-align: left;
     }
     ol {
         text-align: left;
         font-size: 1.25em;
-        text-shadow: 2px 2px 2px #444;
+        text-shadow: $bannerTextShadow;
         li {
             margin-top: 1em;
-            text-shadow: 2px 2px 2px #444;
+            text-shadow: $bannerTextShadow;
         }
     }
     .pronunciation {
-      display: flex;
+        display: flex;
     }
     .bullet {
-      padding-left: 0.5em;
-      padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 }
-
 /*ABOUT ME SECTiON*/
 .aboutMe {
     text-align: center;
     max-width: 960px;
     h2 {
-        border-bottom: solid 2px #f4f4f4;
+        border-bottom: $projectBottomBorder;
         display: flex;
         margin: 1.5em 0;
     }
     p {
         font-size: 1em;
-        font-family: 'Cabin', serif;
+        font-family: $cabin;
         letter-spacing: 0.01em;
         line-height: 1.8em;
         margin: 1.25em auto;
         text-align: left;
     }
     .content-header {
-      font-family: $raleway;
+        font-family: $raleway;
     }
 }
-
 /*PROJECT SECTION*/
-
 .project-title {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    border-bottom: solid 2px #f4f4f4;
+    border-bottom: $projectBottomBorder;
 }
 .projects {
     display: flex;
@@ -162,20 +163,18 @@ p {
     margin-left: 6em;
     letter-spacing: 0.01em;
     line-height: 1.8em;
-}
-.project-info> h2, .gigit-article, .eatup-article {
-    border-top: solid 6px #f4f4f4;
-    padding: 2em;
-}
-.project-info h2 {
-    margin-bottom: 21px;
-}
-.project-info span {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    h2 {
+        border-top: $projectTopBorder;
+        padding: 2em;
+        margin-bottom: 21px;
+    }
+    span {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
 }
 .project-image img {
-    border: #0e6f83 2px solid;
+    border: $imgBorder;
     box-shadow: 10px 10px 25px;
     width: 24em;
     height: auto;
@@ -184,20 +183,20 @@ p {
     margin-top: 0;
 }
 .project-links a {
-    color: #0e6f83;
+    color: $gradientGreen;
 }
-
+// CONTACT SECTION
 .contact {
     background-color: #f7f7f7;
     box-sizing: border-box;
-    color: #444;
+    color: $shadowGrey;
     text-align: center;
     font-family: $raleway;
     font-size: 1em;
     font-weight: 300;
     letter-spacing: normal;
     line-height: 32px;
-    padding: 22px 16px 22px;
+    padding: 22px 16px;
     width: 100%;
 }
 .contact-link-container {
@@ -210,23 +209,22 @@ p {
     text-align: center;
     margin: 0 4em;
 }
+.icon {
+    color: $gradientGreen;
+}
 footer {
-    background: -webkit-linear-gradient(#0e6f83, #02293b);
-    background: -o-linear-gradient(#0e6f83, #02293b);
-    background: linear-gradient(#0e6f83, #02293b);
+    @include banner-gradient($gradientGreen, #02293b);
     text-align: center;
     margin: 0 auto;
-    border-top: solid 3px #0e6f83;
+    border-top: solid 3px $gradientGreen;
     border-width: 50%;
-    color: #ffffff;
+    color: $white;
     padding-bottom: 1em;
+    h4 {
+        font-size: 1.25em;
+    }
 }
-footer h4 {
-    font-size: 1.25em;
-}
-
 /* MEDIA QUERIES */
-
 @media only screen and (max-width: 1024px) and (min-width: 897px) {
     #banner {
         margin-left: 1em;
@@ -240,7 +238,7 @@ footer h4 {
         padding-right: 15px;
     }
     .project-image img {
-        border: #0e6f83 2px solid;
+        border: $imgBorder;
         box-shadow: 10px 10px 25px;
         width: 22em;
         height: auto;
@@ -256,7 +254,9 @@ footer h4 {
         margin-left: auto;
         margin-right: auto;
     }
-    .gigit-project, .iss-project, .eatup-project {
+    .eatup-project,
+    .gigit-project,
+    .iss-project {
         margin-left: 0;
         margin-right: 0;
     }
@@ -293,7 +293,7 @@ footer h4 {
         padding-right: 15px;
     }
     .project-image img {
-        border: #0e6f83 2px solid;
+        border: $imgBorder;
         box-shadow: 10px 10px 25px;
         width: 22em;
         height: auto;
@@ -318,7 +318,7 @@ footer h4 {
         width: 22em;
     }
     .project-image img {
-        border: #0e6f83 2px solid;
+        border: $imgBorder;
         box-shadow: 10px 10px 25px;
         width: 22em;
         height: auto;
@@ -334,14 +334,14 @@ footer h4 {
         font-size: 3em;
     }
     #banner h3 {
-      font-size: 20px;
+        font-size: 20px;
     }
     #banner li {
-      font-size: 18px;
+        font-size: 18px;
     }
     .outline {
-      padding-left: 1em;
-      padding-right: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .wrapper {
         padding-left: 1em;
@@ -355,8 +355,8 @@ footer h4 {
         width: 18em;
     }
     .project-image img {
-        border: #0e6f83 2px solid;
-          box-shadow: 5px 5px 15px;
+        border: $imgBorder;
+        box-shadow: $imgShadow;
         width: 18em;
         height: auto;
     }
@@ -371,16 +371,16 @@ footer h4 {
         font-size: 2.75em;
     }
     #banner em {
-      font-size: 17px;
+        font-size: 17px;
     }
     #banner h3 {
-      font-size: 20px;
+        font-size: 20px;
     }
     #banner li {
-      font-size: 17px;
+        font-size: 17px;
     }
-    .pronunciation{
-      font-size: 10eml
+    .pronunciation {
+        font-size: 10eml;
     }
     .wrapper {
         width: 18em;
@@ -394,8 +394,8 @@ footer h4 {
         width: 16em;
     }
     .project-image img {
-        border: #0e6f83 2px solid;
-        box-shadow: 5px 5px 15px;
+        border: $imgBorder;
+        box-shadow: $imgShadow;
         width: 16em;
         box-shadow: none;
         height: auto;
@@ -409,5 +409,4 @@ footer h4 {
         font-size: 3em;
     }
 }
-
 /* END MEDIA QUERIES */

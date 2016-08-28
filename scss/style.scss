@@ -2,15 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
 
 //VARIABLES
-font-family: 'Playfair Display', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
-// test comment
-// test
-//test
+$playfair: 'Playfair Display', serif;
+$raleway: 'Raleway', sans-serif;
+$cabin: 'Cabin', serif;
 
+
+// MIXINS
+@mixin banner-gradient($gradientColor1, $gradientColor2) {
+  background: -webkit-linear-gradient($gradientColor1, $gradientColor2);
+  background: -o-linear-gradient($gradientColor1, $gradientColor2);
+  background: linear-gradient($gradientColor1, $gradientColor2);
+}
 /* Box Model */
 
 *, *:before, *:after {
@@ -29,13 +31,13 @@ body {
     border: solid 6px #f4f4f4;
 }
 p {
-    font-family: 'Raleway';
+    font-family: $raleway;
 }
 .project-info {
     text-align: left;
 }
 .project-info p {
-    font-family: 'Cabin', serif;
+    font-family: $cabin;
 }
 .aboutMe, .project-info {
     font-family: Raleway;
@@ -49,7 +51,7 @@ p {
     justify-content: center;
 }
 .title {
-    font-family: 'Raleway';
+    font-family: $raleway;
     border-width: thin;
 }
 .wrapper {
@@ -61,9 +63,7 @@ p {
 /*BANNER SECTION*/
 
 #banner-container {
-    background: -webkit-linear-gradient(#0e6f83, #02293b);
-    background: -o-linear-gradient(#0e6f83, #02293b);
-    background: linear-gradient(#0e6f83, #02293b);
+    @include banner-gradient(#0e6f83, #02293b);
     width: 100%;
 }
 #banner {
@@ -78,63 +78,62 @@ p {
     padding: 3em 0;
     max-width: 960px;
     margin: 0 auto;
-}
-#banner h1 {
-    font-family: Raleway;
-    font-size: 4em;
-    text-shadow: 2px 2px 2px #444;
-    text-align: left;
-}
-#banner h3 {
-    font-family: Playfair Display;
-    text-align: left;
-}
-.pronunciation {
-    display: flex;
-}
-.bullet {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-#banner h4 {
-    font-size: 4em;
-    text-shadow: 2px 2px 2px #444;
-}
-#banner em {
-    text-shadow: 2px 2px 2px #444;
-    text-align: left;
-}
-#banner ol {
-    text-align: left;
-    font-size: 1.25em;
-    text-shadow: 2px 2px 2px #444;
-}
-#banner> ol li {
-    margin-top: 1em;
-    text-shadow: 2px 2px 2px #444;
+    h1 {
+        font-family: Raleway;
+        font-size: 4em;
+        text-shadow: 2px 2px 2px #444;
+        text-align: left;
+    }
+    h3 {
+        font-family: Playfair Display;
+        text-align: left;
+    }
+    h4 {
+        font-size: 4em;
+        text-shadow: 2px 2px 2px #444;
+    }
+    em {
+        text-shadow: 2px 2px 2px #444;
+        text-align: left;
+    }
+    ol {
+        text-align: left;
+        font-size: 1.25em;
+        text-shadow: 2px 2px 2px #444;
+        li {
+            margin-top: 1em;
+            text-shadow: 2px 2px 2px #444;
+        }
+    }
+    .pronunciation {
+      display: flex;
+    }
+    .bullet {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
 }
 
-/*ABOUT ME SECTION*/
-
-.content-header {
-    font-family: 'Raleway';
-}
+/*ABOUT ME SECTiON*/
 .aboutMe {
     text-align: center;
     max-width: 960px;
-}
-.aboutMe> h2 {
-    border-bottom: solid 2px #f4f4f4;
-    display: flex;
-    margin: 1.5em 0;
-}
-.aboutMe p {
-    font-size: 1em;
-    font-family: 'Cabin', serif;
-    letter-spacing: 0.01em;
-    line-height: 1.8em;
-    margin: 1.25em auto;
-    text-align: left;
+    h2 {
+        border-bottom: solid 2px #f4f4f4;
+        display: flex;
+        margin: 1.5em 0;
+    }
+    p {
+        font-size: 1em;
+        font-family: 'Cabin', serif;
+        letter-spacing: 0.01em;
+        line-height: 1.8em;
+        margin: 1.25em auto;
+        text-align: left;
+    }
+    .content-header {
+      font-family: $raleway;
+    }
 }
 
 /*PROJECT SECTION*/
@@ -149,7 +148,7 @@ p {
     flex-flow: column;
     align-items: space-around;
     text-align: center;
-    font-family: Raleway;
+    font-family: $raleway;
 }
 .project {
     display: flex;
@@ -188,45 +187,12 @@ p {
     color: #0e6f83;
 }
 
-/*SKILLS SECTION*/
-
-.skillset-header {
-    text-align: center;
-    text-align: center;
-    margin: 0.75em;
-    padding: 1.5em 0em;
-}
-.skillset {
-    justify-content: center;
-    margin-bottom: 2em;
-}
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 10%;
-}
-.skill {
-    margin: 1em 1em;
-    text-align: center;
-}
-.skill img {
-    height: 5em;
-    width: 5em;
-}
-.icon {
-    color: #0e6f83;
-}
-
-/*CONTACT SECTION*/
-
 .contact {
     background-color: #f7f7f7;
     box-sizing: border-box;
     color: #444;
     text-align: center;
-    font-family: Raleway;
+    font-family: $raleway;
     font-size: 1em;
     font-weight: 300;
     letter-spacing: normal;

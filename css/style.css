@@ -1,47 +1,727 @@
-/*
-Error: Invalid CSS after "...Display', serif": expected "{", was ";"
-        on line 5 of scss/style.scss
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
-1: @import 'normalize';
-2: @import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
-3: 
-4: //VARIABLES
-5: font-family: 'Playfair Display', serif;
-6: font-family: 'Merriweather', serif;
-7: font-family: 'Raleway', sans-serif;
-8: font-family: 'Montserrat', sans-serif;
-9: font-family: 'Montserrat Alternates', sans-serif;
-10: *\/
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
 
-Backtrace:
-scss/style.scss:5
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...Display', serif\": expected \"{\", was \";\"\A         on line 5 of scss/style.scss\A \A 1: @import 'normalize';\A 2: @import url(\"https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway\");\A 3: \A 4: //VARIABLES\A 5: font-family: 'Playfair Display', serif;\A 6: font-family: 'Merriweather', serif;\A 7: font-family: 'Raleway', sans-serif;\A 8: font-family: 'Montserrat', sans-serif;\A 9: font-family: 'Montserrat Alternates', sans-serif;\A 10: */"; }
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+button,
+input,
+select {
+  /* 2 */
+  overflow: visible; }
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  /* 1 */
+  margin: 0; }
+
+/**
+ * Remove the inheritence of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritence of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer; }
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* Box Model */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*GLOBAL STYLING */
+body {
+  min-width: 368px; }
+
+.outline {
+  border: solid 6px #f4f4f4; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+.project-info {
+  text-align: left; }
+
+.project-info p {
+  font-family: "Cabin", serif; }
+
+.aboutMe, .project-info {
+  font-family: Raleway; }
+
+.skillset-header .title, .major {
+  border-bottom: solid 2px #f4f4f4;
+  width: inherit;
+  padding-bottom: 15px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; }
+
+.title {
+  font-family: "Raleway", sans-serif;
+  border-width: thin; }
+
+.wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*BANNER SECTION*/
+#banner-container {
+  background: -webkit-linear-gradient(#0e6f83, #02293b);
+  background: -o-linear-gradient(#0e6f83, #02293b);
+  background: linear-gradient(#0e6f83, #02293b);
+  width: 100%; }
+
+#banner {
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1.32px;
+  line-height: 1.5em;
+  padding: 3em 0;
+  max-width: 960px;
+  margin: 0 auto; }
+  #banner h1 {
+    font-family: Raleway;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #444;
+    text-align: left; }
+  #banner h3 {
+    font-family: Playfair Display;
+    text-align: left; }
+  #banner h4 {
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #444; }
+  #banner em {
+    text-shadow: 2px 2px 2px #444;
+    text-align: left; }
+  #banner ol {
+    text-align: left;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 2px #444; }
+    #banner ol li {
+      margin-top: 1em;
+      text-shadow: 2px 2px 2px #444; }
+  #banner .pronunciation {
+    display: flex; }
+  #banner .bullet {
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
+
+/*ABOUT ME SECTiON*/
+.aboutMe {
+  text-align: center;
+  max-width: 960px; }
+  .aboutMe h2 {
+    border-bottom: solid 2px #f4f4f4;
+    display: flex;
+    margin: 1.5em 0; }
+  .aboutMe p {
+    font-size: 1em;
+    font-family: 'Cabin', serif;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
+    margin: 1.25em auto;
+    text-align: left; }
+  .aboutMe .content-header {
+    font-family: "Raleway", sans-serif; }
+
+/*PROJECT SECTION*/
+.project-title {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: solid 2px #f4f4f4; }
+
+.projects {
+  display: flex;
+  flex-flow: column;
+  align-items: space-around;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5em auto;
+  justify-content: space-between; }
+
+.project-info {
+  width: 50%;
+  margin-left: 6em;
+  letter-spacing: 0.01em;
+  line-height: 1.8em; }
+
+.project-info > h2, .gigit-article, .eatup-article {
+  border-top: solid 6px #f4f4f4;
+  padding: 2em; }
+
+.project-info h2 {
+  margin-bottom: 21px; }
+
+.project-info span {
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+
+.project-image img {
+  border: #0e6f83 2px solid;
+  box-shadow: 10px 10px 25px;
+  width: 24em;
+  height: auto; }
+
+.iss-project {
+  margin-top: 0; }
+
+.project-links a {
+  color: #0e6f83; }
+
+.contact {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  color: #444;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 32px;
+  padding: 22px 16px 22px;
+  width: 100%; }
+
+.contact-link-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3em; }
+
+.contact-link {
+  text-align: center;
+  margin: 0 4em; }
+
+footer {
+  background: -webkit-linear-gradient(#0e6f83, #02293b);
+  background: -o-linear-gradient(#0e6f83, #02293b);
+  background: linear-gradient(#0e6f83, #02293b);
+  text-align: center;
+  margin: 0 auto;
+  border-top: solid 3px #0e6f83;
+  border-width: 50%;
+  color: #ffffff;
+  padding-bottom: 1em; }
+
+footer h4 {
+  font-size: 1.25em; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) and (min-width: 897px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+  .pronunciation {
+    font-size: 8px; }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 10px 10px 25px;
+    width: 22em;
+    height: auto; } }
+@media only screen and (max-width: 896px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+  .project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .gigit-project, .iss-project, .eatup-project {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .project-info {
+    width: 30em; }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .project-info {
+    width: 22em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto; } }
+@media only screen and (max-width: 768px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+  #banner h1 {
+    font-size: 3em; }
+
+  .pronunciation {
+    display: block; }
+
+  .bullet {
+    display: none; }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 10px 10px 25px;
+    width: 22em;
+    height: auto; } }
+@media only screen and (max-width: 400px) {
+  #banner {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+  #banner h1 {
+    font-size: 3em; }
+
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em; }
+
+  .project-section {
+    width: 22em; }
+
+  .project-info {
+    width: 22em; }
+
+  .project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 10px 10px 25px;
+    width: 22em;
+    height: auto; } }
+@media only screen and (max-width: 399px) {
+  #banner {
+    margin-left: 2em;
+    margin-right: 1em;
+    width: 20em; }
+
+  #banner h1 {
+    font-size: 3em; }
+
+  #banner h3 {
+    font-size: 20px; }
+
+  #banner li {
+    font-size: 18px; }
+
+  .outline {
+    padding-left: 1em;
+    padding-right: 1em; }
+
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 20em; }
+
+  .project-section {
+    width: 18em; }
+
+  .project-info {
+    width: 18em; }
+
+  .project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 5px 5px 15px;
+    width: 18em;
+    height: auto; } }
+@media only screen and (max-width: 368px) {
+  #banner {
+    width: 16em;
+    text-align: center;
+    margin-left: 3em; }
+
+  #banner h1 {
+    font-size: 2.75em; }
+
+  #banner em {
+    font-size: 17px; }
+
+  #banner h3 {
+    font-size: 20px; }
+
+  #banner li {
+    font-size: 17px; }
+
+  .pronunciation {
+    font-size: 10eml; }
+
+  .wrapper {
+    width: 18em;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .project-section {
+    width: 16em; }
+
+  .project-info {
+    width: 16em; }
+
+  .project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 5px 5px 15px;
+    width: 16em;
+    box-shadow: none;
+    height: auto; } }
+@media only screen and (max-width: 240px) {
+  #banner {
+    margin-left: 0.25em; }
+
+  #banner h1 {
+    font-size: 3em; } }
+/* END MEDIA QUERIES */
+
+/*# sourceMappingURL=style.css.map */

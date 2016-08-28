@@ -1,0 +1,446 @@
+@import 'normalize';
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Cabin|Playfair+Display|Raleway");
+
+//VARIABLES
+font-family: 'Playfair Display', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+
+/* Box Model */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*GLOBAL STYLING */
+
+body {
+  min-width: 368px;
+}
+
+.outline {
+    border: solid 6px #f4f4f4;
+}
+p {
+    font-family: 'Raleway';
+}
+.project-info {
+    text-align: left;
+}
+.project-info p {
+    font-family: 'Cabin', serif;
+}
+.aboutMe, .project-info {
+    font-family: Raleway;
+}
+.skillset-header .title, .major {
+    border-bottom: solid 2px #f4f4f4;
+    width: inherit;
+    padding-bottom: 15px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.title {
+    font-family: 'Raleway';
+    border-width: thin;
+}
+.wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*BANNER SECTION*/
+
+#banner-container {
+    background: -webkit-linear-gradient(#0e6f83, #02293b);
+    background: -o-linear-gradient(#0e6f83, #02293b);
+    background: linear-gradient(#0e6f83, #02293b);
+    width: 100%;
+}
+#banner {
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.32px;
+    line-height: 1.5em;
+    padding: 3em 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#banner h1 {
+    font-family: Raleway;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #444;
+    text-align: left;
+}
+#banner h3 {
+    font-family: Playfair Display;
+    text-align: left;
+}
+.pronunciation {
+    display: flex;
+}
+.bullet {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#banner h4 {
+    font-size: 4em;
+    text-shadow: 2px 2px 2px #444;
+}
+#banner em {
+    text-shadow: 2px 2px 2px #444;
+    text-align: left;
+}
+#banner ol {
+    text-align: left;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 2px #444;
+}
+#banner> ol li {
+    margin-top: 1em;
+    text-shadow: 2px 2px 2px #444;
+}
+
+/*ABOUT ME SECTION*/
+
+.content-header {
+    font-family: 'Raleway';
+}
+.aboutMe {
+    text-align: center;
+    max-width: 960px;
+}
+.aboutMe> h2 {
+    border-bottom: solid 2px #f4f4f4;
+    display: flex;
+    margin: 1.5em 0;
+}
+.aboutMe p {
+    font-size: 1em;
+    font-family: 'Cabin', serif;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
+    margin: 1.25em auto;
+    text-align: left;
+}
+
+/*PROJECT SECTION*/
+
+.project-title {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: solid 2px #f4f4f4;
+}
+.projects {
+    display: flex;
+    flex-flow: column;
+    align-items: space-around;
+    text-align: center;
+    font-family: Raleway;
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5em auto;
+    justify-content: space-between;
+}
+.project-info {
+    width: 50%;
+    margin-left: 6em;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
+}
+.project-info> h2, .gigit-article, .eatup-article {
+    border-top: solid 6px #f4f4f4;
+    padding: 2em;
+}
+.project-info h2 {
+    margin-bottom: 21px;
+}
+.project-info span {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.project-image img {
+    border: #0e6f83 2px solid;
+    box-shadow: 10px 10px 25px;
+    width: 24em;
+    height: auto;
+}
+.iss-project {
+    margin-top: 0;
+}
+.project-links a {
+    color: #0e6f83;
+}
+
+/*SKILLS SECTION*/
+
+.skillset-header {
+    text-align: center;
+    text-align: center;
+    margin: 0.75em;
+    padding: 1.5em 0em;
+}
+.skillset {
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 10%;
+}
+.skill {
+    margin: 1em 1em;
+    text-align: center;
+}
+.skill img {
+    height: 5em;
+    width: 5em;
+}
+.icon {
+    color: #0e6f83;
+}
+
+/*CONTACT SECTION*/
+
+.contact {
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 32px;
+    padding: 22px 16px 22px;
+    width: 100%;
+}
+.contact-link-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+.contact-link {
+    text-align: center;
+    margin: 0 4em;
+}
+footer {
+    background: -webkit-linear-gradient(#0e6f83, #02293b);
+    background: -o-linear-gradient(#0e6f83, #02293b);
+    background: linear-gradient(#0e6f83, #02293b);
+    text-align: center;
+    margin: 0 auto;
+    border-top: solid 3px #0e6f83;
+    border-width: 50%;
+    color: #ffffff;
+    padding-bottom: 1em;
+}
+footer h4 {
+    font-size: 1.25em;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) and (min-width: 897px) {
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .pronunciation {
+        font-size: 8px;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 896px) {
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .project {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gigit-project, .iss-project, .eatup-project {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .project-info {
+        width: 30em;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-info {
+        width: 22em;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    .pronunciation {
+        display: block;
+    }
+    .bullet {
+        display: none;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #banner {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    .wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .project-section {
+        width: 22em;
+    }
+    .project-info {
+        width: 22em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 10px 10px 25px;
+        width: 22em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 399px) {
+    #banner {
+        margin-left: 2em;
+        margin-right: 1em;
+        width: 20em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+    #banner h3 {
+      font-size: 20px;
+    }
+    #banner li {
+      font-size: 18px;
+    }
+    .outline {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    .wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 20em;
+    }
+    .project-section {
+        width: 18em;
+    }
+    .project-info {
+        width: 18em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+          box-shadow: 5px 5px 15px;
+        width: 18em;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 368px) {
+    #banner {
+        width: 16em;
+        text-align: center;
+        margin-left: 3em;
+    }
+    #banner h1 {
+        font-size: 2.75em;
+    }
+    #banner em {
+      font-size: 17px;
+    }
+    #banner h3 {
+      font-size: 20px;
+    }
+    #banner li {
+      font-size: 17px;
+    }
+    .pronunciation{
+      font-size: 10eml
+    }
+    .wrapper {
+        width: 18em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-section {
+        width: 16em;
+    }
+    .project-info {
+        width: 16em;
+    }
+    .project-image img {
+        border: #0e6f83 2px solid;
+        box-shadow: 5px 5px 15px;
+        width: 16em;
+        box-shadow: none;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 240px) {
+    #banner {
+        margin-left: 0.25em;
+    }
+    #banner h1 {
+        font-size: 3em;
+    }
+}
+
+/* END MEDIA QUERIES */

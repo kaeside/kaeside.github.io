@@ -1,0 +1,24 @@
+{
+  "name": "kaeside.github.io",
+  "version": "1.0.0",
+  "description": "Kaeside Iwuagwu's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kaeside/kaeside.github.io.git"
+  },
+  "keywords": [
+    "kaeside",
+    "iwuagwu"
+  ],
+  "author": "Kaeside Iwuagwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaeside/kaeside.github.io/issues"
+  },
+  "homepage": "https://github.com/kaeside/kaeside.github.io#readme"
+}

@@ -13,7 +13,7 @@ $projectBottomBorder: solid 2px $lightGrey;
 $imgBorder: $gradientGreen 2px solid;
 $imgShadow: 5px 5px 15px;
 $bannerTextShadow: 2px 2px 2px $shadowGrey;
-$testborder: solid 4px orange;
+$testBorder: solid 4px orange;
 // MIXINS
 @mixin banner-gradient($gradientColor1, $gradientColor2) {
     background: -webkit-linear-gradient($gradientColor1, $gradientColor2);
@@ -26,15 +26,41 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
-main {
-  flex: 1;
+.superWrapper, .mainWrapper,.contact, footer {
+  border: $testBorder;
 }
+.superWrapper{
+  max-width: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column wrap;
 
-.content {
-  border: solid 4px blue;
+    main {
+      flex: 1;
+      .mainWrapper {
+        max-width: 75vh;
+        .aboutMe {
+          display: flex;
+        }
+      }
+    }
+
+  .contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vh;
+    max-height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 footer {
-  border: $testborder;
+  max-width: 75vh;
+  margin-left: auto;
+  margin-right: auto;
 }

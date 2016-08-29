@@ -366,13 +366,35 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
-main {
-  flex: 1; }
+.superWrapper, .mainWrapper, .contact, footer {
+  border: solid 4px orange; }
 
-.content {
-  border: solid 4px blue; }
+.superWrapper {
+  max-width: 75vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column wrap; }
+  .superWrapper main {
+    flex: 1; }
+    .superWrapper main .mainWrapper {
+      max-width: 75vh; }
+      .superWrapper main .mainWrapper .aboutMe {
+        display: flex; }
+  .superWrapper .contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vh;
+    max-height: 60vh;
+    margin-left: auto;
+    margin-right: auto; }
 
 footer {
-  border: solid 4px orange; }
+  max-width: 75vh;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */

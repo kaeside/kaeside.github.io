@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kaeside</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/43d03d1e13.js"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="banner-container">
+        <div id="banner">
+            <h1><strong>Kaeside Iwuagwu</strong></h1>
+            <div class="pronunciation">
+              <h3><em>\kā-sē-dā\ (Kay-See-Day)</em></h3>
+              <h3 class="bullet">&bull;</h3>
+              <h3><em>\'ē-ˈwäg-ˈwü\ (E-Wog-Wu)</em></h3>
+            </div>
+            <ol>
+                <li>Software Developer</li>
+                <li>Jackie Chan Fan</li>
+                <li>Martial Artist</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="outline">
+        <div class="wrapper">
+            <div class="aboutMe title">
+                <h2 class="content-header">About Me</h2>
+                <p>Hi my name is Kaeside!</p>
+
+                <p>I’m a New York and New Jersey-based front end web developer experienced in ReactJS, React Native, MongoDB, NodeJS, and ExpressJS.</p>
+
+                <p>I love learning new code by refactoring old code. I'm a big fan of nicely paired fonts, and I love optimization.</p>
+
+                <p>I am also a huge martial arts and action movie fan. I love the Zatoichi Black and White series and I have watched all <strong>131</strong> of Jackie Chan's movies.</p>
+
+
+
+                <p>I am a huge craft beer enthusiast and crafter. I been to over 20 breweries spanning from New Jersey all the way to Maine. My other hobbies include reading, building PCs, and a newfound passion with cycling. </p>
+
+                <p>I also know all there is to know about Forrest Gump (the film and the novel).</p>
+            </div>
+
+            <div class="project-section">
+                <h2 class="title project-title">Projects</h2>
+                <div class="projects">
+                    <div class="iss-project project">
+                        <div class="project-image">
+                            <img src="./img/isstracker.png" alt="ISS TRACKER - REPLACE WITH GIF OF APP DEMO" class="issTrackerImg">
+                        </div>
+                        <div class="project-info">
+                            <h3>ISS Tracker<span class="fa fa-space-shuttle"></span></h3>
+                            <p>Have you ever wanted to know where the International Space Station was located at any given time? Use ISS Tracker to track the location of the International Space Station.</p>
+                            <p>This app was developed with React-Native and Google Maps API.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/kaeside/react-native-iss-tracker" class="projectLink">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gigit-project project">
+                        <div class="project-image">
+                            <img src="./img/gigit.png" alt="GIGIT - REPLACE WITH GIF OF APP DEMO" class="gigitImg">
+                        </div>
+                        <div class="project-info">
+                            <h3>GigIt<span class="fa fa-commenting"></span></h3>
+                            <p>Drop into a chat room and chat in real time with people from across the globe.</p>
+                            <p>This app was developed using React and Socket IO.</p>
+                            <div class="project-links">
+                                <a href="hhttps://github.com/kaeside/gigit" class="projectLink">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cozyfi-project project">
+                        <div class="project-image">
+                            <img src="./img/cozyfi.png" alt="COZYFI - REPLACE WITH GIF OF APP DEMO" class="cozyfiImg">
+                        </div>
+                        <div class="project-info">
+                            <h3>CozyFi<span class="fa fa-coffee"></span></h3>
+                            <p>A crowdsoruced listing of coworking spaces in your area! This was a team project made using React JS and FireBase.</p>
+                            <p>I worked on the both the frontend and backend of this application using React JS and FireBase.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/lotusgraham/cozyfi" class="project-link">Github</a>
+                                <span>|</span>
+                                <a href="https://cozyfi-963e1.firebaseapp.com/">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eatup-project project">
+                        <div class="project-image">
+                            <img src="./img/eatup.jpeg" alt="EATUP - REPLACE WITH GIF OF APP DEMO" class="eatupImg">
+                        </div>
+                        <div class="project-info">
+                            <h3>EatUp<span class="fa fa-coffee"></span></h3>
+                            <p>Pair for a meal in the best area with locals in your city! This was a collaborative project with three teammates made using MongoDB, Express JS, React JS, and Node JS.</p>
+                            <p>I worked on the backend of this application using MongoDB and Node JS.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/OoogleBoogle/EatUp/" class="project-link">Github</a>
+                                <span>|</span>
+                                <a href="https://the-real-eatup.herokuapp.com/#/?_k=2d4cnd">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+
+    <div class="contact">
+        <header class="major">
+            <h2>How to Reach Me</h2>
+        </header>
+        <div class="contact-link-container">
+            <div class="contact-link">
+                <a href="mailto:kaeside.iwuagwu@gmail.com" class="icon-link">
+                    <span class="icon fa fa-envelope-o fa-5x">
+                        <h4>Email</h4>
+                    </span>
+                </a>
+            </div>
+            <div class="contact-link">
+                <a href="http://www.github.com/kaeside" class="icon-link">
+                    <span class="icon fa fa-github-alt fa-5x">
+                        <h4>Github</h4>
+                    </span>
+                </a>
+            </div>
+            <div class="contact-link">
+                <a href="http://www.linkedin.com/in/kaeside" class="icon-link">
+                    <span class="icon fa fa-linkedin fa-5x">
+                        <h4>LinkedIn</h4>
+                    </span>
+                </a>
+            </div>
+            <div class="contact-link">
+                <a href="KaesideIwuagwuResume.pdf" download="KaesideIwuagwuResume.pdf" class="icon-link">
+                    <span class="icon fa fa-file-text-o fa-5x">
+                        <h4>Resume</h4>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <h4>Made by Kaeside Iwuagwu &copy; 2016</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

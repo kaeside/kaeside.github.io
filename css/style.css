@@ -364,7 +364,14 @@ textarea {
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  background-image: url("../img/mountfuji.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover; }
 
 .superWrapper, .mainWrapper, .contact, footer {
   border: solid 4px orange; }
@@ -374,13 +381,30 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  color: #ffffff;
+  background-color: #000;
+  opacity: 0.6; }
   .superWrapper main {
     flex: 1; }
     .superWrapper main .mainWrapper {
       max-width: 75vh; }
       .superWrapper main .mainWrapper .aboutMe {
         display: flex; }
+      .superWrapper main .mainWrapper .projects h1 {
+        text-align: center; }
+      .superWrapper main .mainWrapper .projects .project {
+        border: solid 4px orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .superWrapper main .mainWrapper .projects .project img {
+          width: 240px;
+          height: 240px;
+          display: flex;
+          flex-direction: column wrap;
+          align-content: center;
+          justify-content: center; }
   .superWrapper .contact {
     display: flex;
     flex-flow: column wrap;

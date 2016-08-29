@@ -4,7 +4,8 @@
 $playfair: 'Playfair Display', serif;
 $raleway: 'Raleway', sans-serif;
 $cabin: 'Cabin', serif;
-$white: #ffffff;
+$black: #000;
+$text-color: #ffffff;
 $lightGrey: #f4f4f4;
 $shadowGrey: #444;
 $gradientGreen: #0e6f83;
@@ -15,16 +16,21 @@ $imgShadow: 5px 5px 15px;
 $bannerTextShadow: 2px 2px 2px $shadowGrey;
 $testBorder: solid 4px orange;
 // MIXINS
-@mixin banner-gradient($gradientColor1, $gradientColor2) {
-    background: -webkit-linear-gradient($gradientColor1, $gradientColor2);
-    background: -o-linear-gradient($gradientColor1, $gradientColor2);
-    background: linear-gradient($gradientColor1, $gradientColor2);
+@mixin background-size($bgSize) {
+    background-size: $bgSize;
+    -moz-background-size: $bgSize;
+    -o-background-size: $bgSize;
+    -webkit-background-size: $bgSize;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: url('../img/mountfuji.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  @include background-size(cover);
 }
 .superWrapper, .mainWrapper,.contact, footer {
   border: $testBorder;
@@ -35,13 +41,34 @@ body {
   margin-right: auto;
   display: flex;
   flex-flow: column wrap;
-
+  color: $text-color;
+  background-color: $black;
+  opacity: 0.6;
     main {
       flex: 1;
       .mainWrapper {
         max-width: 75vh;
         .aboutMe {
           display: flex;
+        }
+        .projects {
+          h1{
+            text-align: center;
+          }
+          .project {
+            border: $testBorder;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img {
+              width: 240px;
+              height: 240px;
+              display: flex;
+              flex-direction: column wrap;
+              align-content: center;
+              justify-content: center;
+            }
+          }
         }
       }
     }

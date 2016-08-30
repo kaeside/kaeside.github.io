@@ -9,12 +9,12 @@ $text-color: #ffffff;
 $light-grey: #f4f4f4;
 $shadow-grey: #444;
 $gradient-green: #0e6f83;
-$project-top-border: solid 6px $light-grey;
-$project-bottom-border: solid 2px $light-grey;
-$img-border: $gradient-green 2px solid;
+$project-top-outline: solid 6px $light-grey;
+$project-bottom-outline: solid 2px $light-grey;
+$img-outline: $gradient-green 2px solid;
 $img-shadow: 5px 5px 15px;
 $banner-text-shadow: 2px 2px 2px $shadow-grey;
-$test-border: solid 4px orange;
+$test-outline: solid 4px orange;
 // MIXINS
 @mixin background-size($bg-size) {
     background-size: $bg-size;
@@ -22,6 +22,13 @@ $test-border: solid 4px orange;
     -o-background-size: $bg-size;
     -webkit-background-size: $bg-size;
 }
+
+@mixin wrapper-margin ($wrapper-margin){
+    margin-left: $wrapper-margin;
+    margin-right: $wrapper-margin;
+}
+
+
 body:before {
     content: '';
     position: absolute;
@@ -34,40 +41,47 @@ body:before {
     background-position: 50%;
     z-index: -1;
 }
-/*body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-image: url('../imgs/brooklyn-bridge-day.jpg');
-  background-position: center;
-  @include background-size(cover);
-}*/
 .super-wrapper, .main-wrapper,.contact, footer {
-  border: $test-border;
+  outline: $test-outline;
 }
 .super-wrapper{
-  max-width: 960px;
+  max-width: 240px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: wrap;
   color: $text-color;
   background-color: $black;
   opacity: 0.6;
     main {
       flex: 1;
+      max-width: 240px;
       .main-wrapper {
-        max-width: 720px;
+        max-width: 240px;
+        @include wrapper-margin(2em);
         .about-me {
           display: flex;
+          flex-flow: column wrap;
+          img {
+              width: 240px;
+              height: 240px;
+            //   margin-left: auto;
+            //   margin-right: auto;
+          }
+          .about-me-info {
+              h1 {
+                  text-align: center;
+              }
+          }
         }
         .projects {
           h1{
             text-align: center;
           }
           .project {
-            border: $test-border;
+            outline: $test-outline;
             display: flex;
+            flex-flow: column wrap;
             align-items: center;
             justify-content: space-around;
             img {
@@ -77,6 +91,19 @@ body:before {
               flex-direction: column wrap;
               align-content: center;
               justify-content: center;
+            }
+            .project-info{
+                header {
+                    display: flex;
+                    flex-flow: column wrap;
+                    text-align: center;
+                    p{
+                        text-align: left;
+                    }
+                }
+                .project-links{
+                    text-align: center;
+                }
             }
           }
         }
@@ -89,15 +116,14 @@ body:before {
     align-content: center;
     justify-content: center;
     align-items: center;
-    max-width: 572px;
-    max-height: 572px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 240px;
+    max-height: 240px;
+    @include wrapper-margin(2em);
   }
 }
 
 footer {
-  max-width: 720px;
+  max-width: 240px;
   margin-left: auto;
   margin-right: auto;
 }

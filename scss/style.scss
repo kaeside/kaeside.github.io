@@ -152,22 +152,17 @@ p {
     font-family: $raleway;
 }
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5em auto;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5em auto;
+  justify-content: space-between;
 }
 .project-info {
     width: 50%;
     margin-left: 6em;
     letter-spacing: 0.01em;
     line-height: 1.8em;
-    h2 {
-        border-top: $projectTopBorder;
-        padding: 2em;
-        margin-bottom: 21px;
-    }
     span {
         margin-left: 0.5em;
         margin-right: 0.5em;
@@ -198,19 +193,19 @@ p {
     line-height: 32px;
     padding: 22px 16px;
     width: 100%;
-}
-.contact-link-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3em;
-}
-.contact-link {
-    text-align: center;
-    margin: 0 4em;
-}
-.icon {
-    color: $gradientGreen;
+    .contact-link-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3em;
+      .contact-link {
+        text-align: center;
+        margin: 0 4em;
+        .icon {
+          color: $gradientGreen;
+        }
+      }
+    }
 }
 footer {
     @include banner-gradient($gradientGreen, #02293b);
@@ -283,7 +278,8 @@ footer {
         font-size: 3em;
     }
     .pronunciation {
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
     }
     .bullet {
         display: none;

@@ -1,3 +1,11 @@
+header {
+    outline: solid black;
+    h1 {
+        span {
+            text-transform: lowercase;   
+        }
+    }
+}
 div {
     outline: solid black 2px;
 }

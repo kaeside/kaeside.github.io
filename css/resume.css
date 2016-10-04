@@ -1,7 +1,8 @@
 header {
   outline: solid black; }
   header h1 span {
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    color: green; }
 
 div {
   outline: solid black 2px; }

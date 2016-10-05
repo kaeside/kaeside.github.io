@@ -1,12 +1,34 @@
-header {
-    outline: solid black;
-    h1 {
-        span {
-            text-transform: lowercase;
-            color: green;   
+.container {
+    max-width: 800px;
+    header {
+        outline: solid black;
+        h1 {
+            span {
+                text-transform: lowercase;
+                color: green;
+            }
         }
     }
 }
 div {
     outline: solid black 2px;
+}
+
+.job {
+    h3 {
+
+    }
+    .duration {
+        border: solid;
+        border-radius: 6px;
+        font-size: 85%;
+    }
+    ul {
+        li {
+
+        }
+    }
+    .keywords {
+        font-size: 10px;
+    }
 }

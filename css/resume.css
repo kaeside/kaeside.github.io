@@ -1,10 +1,19 @@
-header {
-  outline: solid black; }
-  header h1 span {
-    text-transform: lowercase;
-    color: green; }
+.container {
+  max-width: 800px; }
+  .container header {
+    outline: solid black; }
+    .container header h1 span {
+      text-transform: lowercase;
+      color: green; }
 
 div {
   outline: solid black 2px; }
+
+.job .duration {
+  border: solid;
+  border-radius: 6px;
+  font-size: 85%; }
+.job .keywords {
+  font-size: 10px; }
 
 /*# sourceMappingURL=resume.css.map */

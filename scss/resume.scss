@@ -1,34 +1,112 @@
+$link-font-size: 10px;
+$content-padding: 5px;
+$title-font-size: 24px;
+//MIXINS
+@mixin content-padding($content-padding) {
+    padding-left: $content-padding;
+    padding-right: $content-padding;
+}
+@mixin title-font-size($title-font-size) {
+    font-size: $title-font-size;
+}
+//OVERRIDES
+html {
+    min-width: 320px;
+}
+
+.about-me > h2,
+.title > h1,
+.title > h2,
+h2 > span {
+    @include title-font-size($title-font-size);
+}
+
+.job > h3, .school > h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.job > ul, .school > ul, p {
+    font-size: 12px;
+}
+
+.skillset > h3 {
+    font-size: 18px;
+}
+
+//END OVERRIDE
+
 .container {
     max-width: 800px;
+    padding: 15px;
+
     header {
-        outline: solid black;
+        // outline: solid black;
+        // display: flex;
+        // flex-flow: row wrap;
+        @include title-font-size($title-font-size);
+        // @include content-padding($content-padding);
         h1 {
+            @include title-font-size($title-font-size);
+            float: left;
             span {
-                text-transform: lowercase;
                 color: green;
+            }
+        }
+        h2 {
+            float: right;
+        }
+    }
+
+    .contact {
+        a {
+            display: flex;
+            font-size: $link-font-size;
+        }
+        .about-me {
+            color: #717171;
+        }
+    }
+    .skills {
+        .skillset {
+            display: flex;
+            h3 {
+                align-self: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            p {
+                align-self: center;
+                margin-left: 20px;
+                margin-bottom: 0;
             }
         }
     }
 }
+
 div {
-    outline: solid black 2px;
+    // outline: solid black 2px;
 }
 
 .job {
-    h3 {
+    h3 {}
 
-    }
     .duration {
-        border: solid;
         border-radius: 6px;
-        font-size: 85%;
+        font-size: 10px;
+        background-color: #F5F5F5;
+        color: #6F6F6F;
+        padding: 4px 6px;
     }
-    ul {
-        li {
 
-        }
+    ul {
+        li {}
     }
+
     .keywords {
         font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        @include content-padding($content-padding);
     }
 }

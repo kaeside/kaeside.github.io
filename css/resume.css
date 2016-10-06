@@ -1,19 +1,61 @@
-.container {
-  max-width: 800px; }
-  .container header {
-    outline: solid black; }
-    .container header h1 span {
-      text-transform: lowercase;
-      color: green; }
+html {
+  min-width: 320px; }
 
-div {
-  outline: solid black 2px; }
+.about-me > h2,
+.title > h1,
+.title > h2,
+h2 > span {
+  font-size: 24px; }
+
+.job > h3, .school > h3 {
+  font-size: 18px;
+  font-style: italic; }
+
+.job > ul, .school > ul, p {
+  font-size: 12px; }
+
+.skillset > h3 {
+  font-size: 18px; }
+
+.container {
+  max-width: 800px;
+  padding: 15px; }
+  .container header {
+    font-size: 24px; }
+    .container header h1 {
+      font-size: 24px;
+      float: left; }
+      .container header h1 span {
+        color: green; }
+    .container header h2 {
+      float: right; }
+  .container .contact a {
+    display: flex;
+    font-size: 10px; }
+  .container .contact .about-me {
+    color: #717171; }
+  .container .skills .skillset {
+    display: flex; }
+    .container .skills .skillset h3 {
+      align-self: center;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .container .skills .skillset p {
+      align-self: center;
+      margin-left: 20px;
+      margin-bottom: 0; }
 
 .job .duration {
-  border: solid;
   border-radius: 6px;
-  font-size: 85%; }
+  font-size: 10px;
+  background-color: #F5F5F5;
+  color: #6F6F6F;
+  padding: 4px 6px; }
 .job .keywords {
-  font-size: 10px; }
+  font-size: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 /*# sourceMappingURL=resume.css.map */

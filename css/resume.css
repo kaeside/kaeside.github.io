@@ -1,6 +1,7 @@
-@import "https://fonts.googleapis.com/css?family=Amiko Catamaran";
+@import "https://fonts.googleapis.com/css?family=Amiko|Catamaran";
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif; }
 
 html {
   min-width: 320px; }
@@ -9,11 +10,11 @@ html {
 .title > h2 {
   font-size: 24px; }
 
-.school > h3 {
+.institution > h3 {
   font-size: 18px;
   font-style: italic; }
 
-.school > ul, p {
+.institution > ul, p {
   font-size: 14px; }
 
 .container {
@@ -26,11 +27,8 @@ html {
     .container .main-title h1 {
       align-items: flex-start;
       margin: 0; }
-    .container .main-title h2 {
-      align-items: flex-end;
-      margin: 0; }
-      .container .main-title h2 span {
-        font-size: 24px; }
+    .container .main-title .full-stack {
+      font-weight: bold; }
   .container header {
     font-size: 24px; }
     .container header h1 {
@@ -42,36 +40,42 @@ html {
     .container .contact a {
       font-size: 10px; }
   .container .about-me {
-    color: #A9A9A9;
     margin: 1em 0; }
     .container .about-me h2 {
-      font-size: 24px; }
+      font-size: 24px;
+      color: black; }
+    .container .about-me p {
+      color: #A9A9A9; }
   .container .skills .skillset {
     display: flex; }
     .container .skills .skillset .row-title {
       font-size: 16px; }
     .container .skills .skillset .skillset-keywords {
-      font-size: 10px; }
+      font-size: 10px;
+      padding-left: 10px; }
   .container .projects h3 {
     font-size: 18px; }
-
-.job .job-header h3 {
-  font-size: 18px;
-  font-style: italic; }
-.job .job-header .duration {
-  border-radius: 6px;
-  font-size: 10px;
-  background-color: #F5F5F5;
-  color: #6F6F6F;
-  padding: 4px 6px;
-  float: right; }
-.job ul li {
-  font-size: 12px; }
-.job .keywords {
-  font-size: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 5px;
-  padding-right: 5px; }
+  .container .job .job-header h3 {
+    font-size: 18px;
+    font-style: italic; }
+  .container .job .job-header .duration {
+    border-radius: 6px;
+    font-size: 10px;
+    background-color: #F5F5F5;
+    color: #6F6F6F;
+    padding: 4px 6px;
+    float: right; }
+  .container .job ul li {
+    font-size: 14px; }
+  .container .job .keywords {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .container .education .institution header {
+    display: flex;
+    font-size: 18px;
+    font-style: italic; }
 
 /*# sourceMappingURL=resume.css.map */

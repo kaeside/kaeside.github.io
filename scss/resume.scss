@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Amiko Catamaran";
+@import "https://fonts.googleapis.com/css?family=Amiko|Catamaran";
 
 $link-font-size: 10px;
 $content-padding: 5px;
@@ -19,6 +19,7 @@ $grey: #A9A9A9;
 
 * {
     box-sizing: border-box;
+    font-family: $catamaran;
 }
 html {
     min-width: 320px;
@@ -29,12 +30,12 @@ html {
     @include title-font-size($title-font-size);
 }
 
-.school > h3 {
+.institution > h3 {
     font-size: 18px;
     font-style: italic;
 }
 
-.school > ul, p {
+.institution > ul, p {
     font-size: 14px;
 }
 
@@ -52,12 +53,8 @@ html {
             align-items: flex-start;
             margin: 0;
         }
-        h2 {
-            align-items: flex-end;
-            margin: 0;
-            span {
-                @include title-font-size($title-font-size);
-            }
+        .full-stack {
+            font-weight: bold;
         }
     }
 
@@ -81,10 +78,13 @@ html {
         }
     }
     .about-me {
-        color: $grey;
         margin: 1em 0;
         h2 {
             @include title-font-size($title-font-size);
+            color: black;
+        }
+        p {
+            color: $grey;
         }
     }
     .skills {
@@ -94,7 +94,8 @@ html {
                 font-size: 16px;
             }
             .skillset-keywords {
-                font-size: 10px
+                font-size: 10px;
+                padding-left: 10px;
             }
         }
     }
@@ -103,36 +104,49 @@ html {
             font-size: 18px;
         }
     }
-}
-
-.job {
-    .job-header {
-        // display: flex;
-        // flex-wrap: wrap;
-        h3 {
-            font-size: 18px;
-            font-style: italic;
+    .job {
+        .job-header {
+            // display: flex;
+            // flex-wrap: wrap;
+            h3 {
+                font-size: 18px;
+                font-style: italic;
+            }
+            .duration {
+                border-radius: 6px;
+                font-size: 10px;
+                background-color: #F5F5F5;
+                color: #6F6F6F;
+                padding: 4px 6px;
+                // align-self: center;
+                float: right;
+            }
         }
-        .duration {
-            border-radius: 6px;
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+
+        .keywords {
             font-size: 10px;
-            background-color: #F5F5F5;
-            color: #6F6F6F;
-            padding: 4px 6px;
-            // align-self: center;
-            float: right;
-        }
-    }
-    ul {
-        li {
-            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            @include content-padding($content-padding);
         }
     }
 
-    .keywords {
-        font-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        @include content-padding($content-padding);
+    .education {
+        .institution {
+            header {
+                display: flex;
+                font-size: 18px;
+                font-style: italic;
+            }
+            ul {
+
+            }
+
+        }
     }
 }

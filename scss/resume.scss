@@ -84,7 +84,7 @@ html {
             color: black;
         }
         p {
-            color: $grey;
+            color: #6C6C6C;
         }
     }
     .skills {
@@ -92,6 +92,7 @@ html {
             display: flex;
             .row-title {
                 font-size: 16px;
+                color: green;
             }
             .skillset-keywords {
                 font-size: 10px;
@@ -102,6 +103,9 @@ html {
     .projects {
         h3 {
             font-size: 18px;
+            a {
+                color: green;
+            }
         }
     }
     .job {
@@ -111,6 +115,12 @@ html {
             h3 {
                 font-size: 18px;
                 font-style: italic;
+                a {
+                    color: green;
+                }
+                span {
+                    color: green;
+                }
             }
             .duration {
                 border-radius: 6px;
@@ -120,6 +130,10 @@ html {
                 padding: 4px 6px;
                 // align-self: center;
                 float: right;
+            }
+            .duration:hover {
+                color: green;
+                background-color: black;
             }
         }
         ul {

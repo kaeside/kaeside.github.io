@@ -1,6 +1,12 @@
+@import "https://fonts.googleapis.com/css?family=Amiko Catamaran";
+
 $link-font-size: 10px;
 $content-padding: 5px;
 $title-font-size: 24px;
+$amiko: 'Amiko', sans-serif;
+$catamaran: 'Catamaran', sans-serif;
+$grey: #A9A9A9;
+
 //MIXINS
 @mixin content-padding($content-padding) {
     padding-left: $content-padding;
@@ -10,97 +16,117 @@ $title-font-size: 24px;
     font-size: $title-font-size;
 }
 //OVERRIDES
+
+* {
+    box-sizing: border-box;
+}
 html {
     min-width: 320px;
 }
 
-.about-me > h2,
 .title > h1,
-.title > h2,
-h2 > span {
+.title > h2 {
     @include title-font-size($title-font-size);
 }
 
-.job > h3, .school > h3 {
+.school > h3 {
     font-size: 18px;
     font-style: italic;
 }
 
-.job > ul, .school > ul, p {
-    font-size: 12px;
+.school > ul, p {
+    font-size: 14px;
 }
 
-.skillset > h3 {
-    font-size: 18px;
-}
-
-//END OVERRIDE
+//END OVERRIDES
 
 .container {
     max-width: 800px;
-    padding: 15px;
+    padding: 20px 20px;
+
+    .main-title {
+        @include title-font-size($title-font-size);
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            align-items: flex-start;
+            margin: 0;
+        }
+        h2 {
+            align-items: flex-end;
+            margin: 0;
+            span {
+                @include title-font-size($title-font-size);
+            }
+        }
+    }
 
     header {
-        // outline: solid black;
-        // display: flex;
-        // flex-flow: row wrap;
         @include title-font-size($title-font-size);
-        // @include content-padding($content-padding);
         h1 {
             @include title-font-size($title-font-size);
-            float: left;
             span {
                 color: green;
             }
         }
         h2 {
-            float: right;
+            // float: right;
         }
     }
 
     .contact {
+        float: right;
         a {
-            display: flex;
             font-size: $link-font-size;
         }
-        .about-me {
-            color: #717171;
+    }
+    .about-me {
+        color: $grey;
+        margin: 1em 0;
+        h2 {
+            @include title-font-size($title-font-size);
         }
     }
     .skills {
         .skillset {
             display: flex;
-            h3 {
-                align-self: center;
-                margin-top: 0;
-                margin-bottom: 0;
+            .row-title {
+                font-size: 16px;
             }
-            p {
-                align-self: center;
-                margin-left: 20px;
-                margin-bottom: 0;
+            .skillset-keywords {
+                font-size: 10px
             }
+        }
+    }
+    .projects {
+        h3 {
+            font-size: 18px;
         }
     }
 }
 
-div {
-    // outline: solid black 2px;
-}
-
 .job {
-    h3 {}
-
-    .duration {
-        border-radius: 6px;
-        font-size: 10px;
-        background-color: #F5F5F5;
-        color: #6F6F6F;
-        padding: 4px 6px;
+    .job-header {
+        // display: flex;
+        // flex-wrap: wrap;
+        h3 {
+            font-size: 18px;
+            font-style: italic;
+        }
+        .duration {
+            border-radius: 6px;
+            font-size: 10px;
+            background-color: #F5F5F5;
+            color: #6F6F6F;
+            padding: 4px 6px;
+            // align-self: center;
+            float: right;
+        }
     }
-
     ul {
-        li {}
+        li {
+            font-size: 12px;
+        }
     }
 
     .keywords {

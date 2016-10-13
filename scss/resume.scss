@@ -48,13 +48,13 @@ h2 > span {
         // @include content-padding($content-padding);
         h1 {
             @include title-font-size($title-font-size);
-            float: left;
+            // float: left;
             span {
                 color: green;
             }
         }
         h2 {
-            float: right;
+            // float: right;
         }
     }
 

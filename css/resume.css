@@ -23,12 +23,9 @@ h2 > span {
   .container header {
     font-size: 24px; }
     .container header h1 {
-      font-size: 24px;
-      float: left; }
+      font-size: 24px; }
       .container header h1 span {
         color: green; }
-    .container header h2 {
-      float: right; }
   .container .contact a {
     display: flex;
     font-size: 10px; }

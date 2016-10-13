@@ -12,9 +12,37 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/themes/green.css">
 
-<!-- Add your Fonts here -->
+<!-- Add your fonts here -->
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Add your scripts here -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script>
+function initialize() {
+var myLatlng = new google.maps.LatLng(-37.817532,144.967148);
+var mapOptions = {
+zoom: 14,
+center: myLatlng,
+scrollwheel: false,
+navigationControl: false,
+mapTypeControl: false,
+scaleControl: false,
+draggable: true,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+var marker = new google.maps.Marker({
+position: myLatlng,
+map: map,
+title: 'Visit us here!'
+});
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 
 </head>
 <body>
@@ -53,39 +81,74 @@
 <nav id="nav">
 <ul class="nav">
 <li><img src="img/logo.svg" alt="My Logo"></li>
-<li class="active"><a href="index.html" class="icon-user"><span>Profile</span></a></li>
+<li><a href="index.html" class="icon-user"><span>Profile</span></a></li>
 <li><a href="work.html" class="icon-briefcase"><span>Work</span></a></li>
 <li><a href="resume.html" class="icon-list"><span>Resume</span></a></li>
-<li><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
+<li class="active"><a href="contact.html" class="icon-mail"><span>Contact</span></a></li>
 </ul>
 </nav>
 </header>
 <!-- Header End -->
 
 <section class="content">
-<article class="clearfix">
-<div class="p-image">
-<img src="img/profile.jpg" alt="My Image">
+
+<div id="map"></div>
+
+<article class="contact">
+
+<h2>Inquiry</h2>
+<form action="send.php" name="contactform" class="contactform" method="post">
+<label for="name">Full name<span class="required">*</span></label>
+<input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+<label for="company">Company<span class="required">*</span></label>
+<input type="text" name="company" id="company" placeholder="Where do you work?" required>
+
+<label for="email">Email address<span class="required">*</span></label>
+<input type="email" name="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" placeholder="e.g. info@envato.com" required>
+
+<div class="budgetrange">
+<label for="budget1">Budget range<span class="required">*</span></label><br>
+<input type="radio" name="budget" id="budget1" value="$1.000 - €2.000" checked>
+<label for="budget1" class="radio">$1.000 - 2.000</label>
+<input type="radio" name="budget" id="budget2" value="$2.001 - €5.000">
+<label for="budget2" class="radio">$2.001 - 5.000</label>
+<input type="radio" name="budget" id="budget3" value="$5.001 - 10,000+">
+<label for="budget3" class="radio">$5.001 - 10,000+</label>
 </div>
 
-</article>
+<label for="project">Project description<span class="required">*</span></label><br>
+<textarea name="project" id="project" cols="40" rows="3" placeholder="Describe your project and add some details." required></textarea>
+<input type="submit" name="submit" id="submit" value="Send">
+</form>
 
-<article class="p-details profile">
-<h2>Kaeside Iwuagwu</h2>
-<h4>Webdesigner &amp; Web Developer from NYC</h4>
-<p>Hi! My name is Kaeside, I'm a creative designer and developer from NYC. I enjoy creating eye candy solutions for web and mobile applications. I'd love to work on yours, too :)</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt, a, quidem provident ipsam eveniet doloremque perferendis animi veniam temporibus illo delectus inventore expedita sapiente amet nihil est sequi. Molestiae, unde, harum, dicta perferendis nesciunt quae nemo cum mollitia aliquam similique voluptate tenetur pariatur. Reiciendis!</p>
-<a href="work.html">View my portfolio</a>
-<a href="contact.html">Contact me now</a>
 </article>
+<!-- Contact End -->
+
+<aside class="sidebar">
+<div class="c-data">
+<h2>Contact</h2>
+<p>
+<strong>Kaeside Iwuagwu</strong><br>
+Flinders St 35<br>
+23456 NYC<br>
+USA
+</p>
+<p>
+<strong>E-Mail Contact:</strong>
+<a class="c-email" href="mailto:spam@rocketthemes.net">spam@rocketthemes.net</a>
+</p>
+</div>
+</aside>
+<!-- Sidebar End -->
 
 </section>
-<!-- Content End -->
+<!-- Content Section End -->
 
 </div>
 <!-- Container End -->
 
-<!-- Scripts -->
+<!-- Add your scripts here -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/plugins.js"></script>
 
